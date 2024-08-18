@@ -1,10 +1,6 @@
 {{ latex_commands.b }}
-
-
 {{ latex_commands.lambda_p }}
-
 {{ latex_commands.b_ef }}
-
 # Cálculo - Área efetiva
 ## Variáveis
 {{ glossario.B }}

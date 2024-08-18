@@ -1,5 +1,5 @@
 site_name: Iniciação científica
-repo_url: 
+repo_url: https://github.com/Eduardo-Milagres/iniciacao_cientifica.git
 repo_name: iniciacao_cientifica
 edit_uri: tree/main/docs
 
@@ -56,11 +56,11 @@ extra:
     g: $g$ = Gravidade (m/s²)
     n_c: $n_c$ = Número de colunas (un.)
     F: $F$ = Força (N)
-    E: $E$ = Módulo de elasticidade (kN/cm)
+    E: $E$ = Módulo de elasticidade (kN/cm²)
     k_al: $k_{al}$ = Coeficiente de flambagem local
     t: $t$ = Espessura (cm)
     sigma: $\sigma$ = Tensão (MPA)
-    lambda_p: $\lambda_p$ = Índice de esbeltez
+    lambda_p: $\lambda_p$ = Esbeltez reduzida
   valores:
     B1_mm: 35
     B1_cm: 3,5
