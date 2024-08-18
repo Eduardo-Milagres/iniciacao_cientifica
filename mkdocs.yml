@@ -1,0 +1,93 @@
+site_name: Iniciação científica
+repo_url: 
+repo_name: iniciacao_cientifica
+edit_uri: tree/main/docs
+
+theme: 
+  name: material
+  language: pt-BR
+markdown_extensions:
+  - admonition
+  - nl2br
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji  # Suporte a emojis
+  - pymdownx.tasklist  # Suporte para tarefas
+  - pymdownx.mark  # Suporte para marcações
+  - pymdownx.tilde  # Suporte a tachado
+  - pymdownx.highlight  # Suporte a código
+  - pymdownx.arithmatex:
+      generic: true
+plugins:
+  - macros
+  - search
+  - callouts
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  nomes:
+    github_doc_repo: documentacao_gimi
+    perfil_viga: perfil U 
+  links:
+  imagens:
+    CT_P_COLUNA_084_1878_Corte_B_B: "<img src='/assets/CT.P.COLUNA.084-1878 - Corte B-B.png' style='margin: auto; margin-left: 50%; margin-right: 50%;''>"
+    Coeficiente_de_flambagem_local_para_elementos_AL_Caso_a: "<img src='/assets/Coeficiente de flambagem local para elementos AL - Caso a.png' style='margin: auto; margin-left: 50%; margin-right: 50%;''>"
+    Coeficiente_de_flambagem_local_para_elementos_AA_Caso_a: "<img src='/assets/Coeficiente de flambagem local para elementos AA - Caso a.png' style='margin: auto; margin-left: 50%; margin-right: 50%;''>"
+  latex_commands:
+    F: $\newcommand\F[3]{F=\frac{#1*#2}{#3}}$
+    b: $\newcommand\b[2]{b={#1}-2*{#2}}$
+    b_ef: $\newcommand\bef[2]{b_{ef}=\frac{#1*\big( 1 - \frac{0,22}{#2} \big)}{#2}}$
+    lambda_p: $\newcommand\lambdaP[5]{\lambda_p=\frac{\frac{#1}{#2}}{0,95*\sqrt{\frac{#3*#4}{#5}}}}$
+  formulas:
+    F: $$\F{m}{g}{n_c}$$
+    b: $$\b{B}{t}$$
+    b_ef: $$\bef{b}{\lambda_p}$$
+    lambda_p_al: $$\lambdaP{b}{t}{k_{al}}{E}{\sigma}$$
+    lambda_p_aa: $$\lambdaP{b}{t}{k_{aa}}{E}{\sigma}$$
+  glossario:
+    B: $B$ = Comprimento da parte reta (cm)
+    b_ef: $b_{ef}$ = Largura efetiva (cm)
+    m: $m$ = Massa (kg)
+    g: $g$ = Gravidade (m/s²)
+    n_c: $n_c$ = Número de colunas (un.)
+    F: $F$ = Força (N)
+    E: $E$ = Módulo de elasticidade (kN/cm)
+    k_al: $k_{al}$ = Coeficiente de flambagem local
+    t: $t$ = Espessura (cm)
+    sigma: $\sigma$ = Tensão (MPA)
+    lambda_p: $\lambda_p$ = Índice de esbeltez
+  valores:
+    B1_mm: 35
+    B1_cm: 3,5
+    b1: 3,11
+    B2_mm: 225
+    B2_cm: 22,5
+    b2: 21,72
+    B3_mm: 197
+    B3_cm: 19,7
+    b3: 18,92
+    B4_mm: 35
+    B4_cm: 3,5
+    b4: 2,72
+    B5_mm: 30
+    B5_cm: 3,0
+    b5: 2,61
+    E: 20500
+    F: 1450
+    g: 10
+    k_al: 0,43
+    k_aa: 4
+    m: 580
+    n_c: 4
+    t: 0,2
+    sigma: 0,15
+    lambda_p1: 0,067
+    lambda_p2: 0,155
+    lambda_p3: 0,135
+    lambda_p4: 0,019
+    lambda_p5: 0,057
