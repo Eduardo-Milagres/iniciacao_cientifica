@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../for%C3%A7a/">
+        <link rel="prev" href="../1.%20For%C3%A7a/">
       
+      
+        <link rel="next" href="../3.%20Dimensionamento-%C3%A0-tra%C3%A7%C3%A3o/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>Área efetiva - Iniciação científica</title>
+        <title>2. Área efetiva - Iniciação científica</title>
       
     
     
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Área efetiva
+              2. Área efetiva
             
           </span>
         </div>
@@ -270,11 +272,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../for%C3%A7a/" class="md-nav__link">
+      <a href="../1.%20For%C3%A7a/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Força
+    1. Força
   </span>
   
 
@@ -304,7 +306,7 @@
           
   
   <span class="md-ellipsis">
-    Área efetiva
+    2. Área efetiva
   </span>
   
 
@@ -315,7 +317,7 @@
         
   
   <span class="md-ellipsis">
-    Área efetiva
+    2. Área efetiva
   </span>
   
 
@@ -340,6 +342,15 @@
   <a href="#variaveis" class="md-nav__link">
     <span class="md-ellipsis">
       Variáveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#area-efetiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Área efetiva
     </span>
   </a>
   
@@ -564,6 +575,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Dimensionamento-%C3%A0-tra%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Dimensionamento à tração
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -601,6 +633,15 @@
   <a href="#variaveis" class="md-nav__link">
     <span class="md-ellipsis">
       Variáveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#area-efetiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Área efetiva
     </span>
   </a>
   
@@ -834,7 +875,8 @@
   
 
 
-<p><span class="arithmatex">\(\newcommand\b[2]{b={#1}-2*{#2}}\)</span><br />
+<p><span class="arithmatex">\(\newcommand\Af[6]{A_f=(#1+#2+#3+#4+#5)*#6}\)</span><br />
+<span class="arithmatex">\(\newcommand\b[2]{b={#1}-2*{#2}}\)</span><br />
 <span class="arithmatex">\(\newcommand\lambdaP[5]{\lambda_p=\frac{\frac{#1}{#2}}{0,95*\sqrt{\frac{#3*#4}{#5}}}}\)</span><br />
 <span class="arithmatex">\(\newcommand\bef[2]{b_{ef}=\frac{#1*\big( 1 - \frac{0,22}{#2} \big)}{#2}}\)</span></p>
 <h1 id="calculo-area-efetiva">Cálculo - Área efetiva</h1>
@@ -855,7 +897,7 @@
 <span class="arithmatex">\(B4\)</span> = 35 mm -&gt; 3,5 cm<br />
 <span class="arithmatex">\(B5\)</span> = 30 mm -&gt; 3,0 cm<br />
 <span class="arithmatex">\(E\)</span> = 20500<br />
-<a href="../for%C3%A7a/"><span class="arithmatex">\(F\)</span> = 1450</a><br />
+<a href="1. força.md"><span class="arithmatex">\(F\)</span> = 1450</a><br />
 <span class="arithmatex">\(t\)</span> = 0,2</p>
 </div>
 <div class="admonition question">
@@ -879,6 +921,10 @@
 <span class="arithmatex">\(b_{ef5}\)</span> = <span class="arithmatex">\(b_5\)</span> = 2,61 </p>
 </div>
 <p><img src='/assets/CT.P.COLUNA.084-1878 - Corte B-B.png' style='margin: auto; margin-left: 50%; margin-right: 50%;''></p>
+<h2 id="area-efetiva">Área efetiva</h2>
+<div class="arithmatex">\[\Af{B1}{B2}{B3}{B4}{B5}{t}\]</div>
+<div class="arithmatex">\[\Af{ 3,5 }{ 22,5 }{ 19,7 }{ 3,5 }{ 3,0 }{ 0,2 }\]</div>
+<div class="arithmatex">\[A_f = 10,179 \]</div>
 <h2 id="calculos-do-elemento-b1">Calculos do elemento B1</h2>
 <h3 id="comprimento-da-parte-reta-b_1">Comprimento da parte reta (<span class="arithmatex">\(b_1\)</span>)</h3>
 <p>A largura, b, é o comprimento da parte reta do elemento, descontados os trechos curvos:</p>
