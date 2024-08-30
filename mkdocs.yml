@@ -39,29 +39,41 @@ extra:
     Coeficiente_de_flambagem_local_para_elementos_AL_Caso_a: "<img src='/assets/Coeficiente de flambagem local para elementos AL - Caso a.png' style='margin: auto; margin-left: 50%; margin-right: 50%;''>"
     Coeficiente_de_flambagem_local_para_elementos_AA_Caso_a: "<img src='/assets/Coeficiente de flambagem local para elementos AA - Caso a.png' style='margin: auto; margin-left: 50%; margin-right: 50%;''>"
   latex_commands:
+    A_f: $\newcommand\Af[6]{A_f=(#1+#2+#3+#4+#5)*#6}$
     F: $\newcommand\F[3]{F=\frac{#1*#2}{#3}}$
     b: $\newcommand\b[2]{b={#1}-2*{#2}}$
     b_ef: $\newcommand\bef[2]{b_{ef}=\frac{#1*\big( 1 - \frac{0,22}{#2} \big)}{#2}}$
     lambda_p: $\newcommand\lambdaP[5]{\lambda_p=\frac{\frac{#1}{#2}}{0,95*\sqrt{\frac{#3*#4}{#5}}}}$
+    N_trd: $\newcommand\Ntrd[3]{N_{trd}=#1*\frac{#2}{#3}}$
   formulas:
-    F: $$\F{m}{g}{n_c}$$
+    A_f: $$\Af{B1}{B2}{B3}{B4}{B5}{t}$$
     b: $$\b{B}{t}$$
     b_ef: $$\bef{b}{\lambda_p}$$
+    F: $$\F{m}{g}{n_c}$$
+    N_trd: $$\Ntrd{A_f}{F_y}{\gamma}$$
     lambda_p_al: $$\lambdaP{b}{t}{k_{al}}{E}{\sigma}$$
     lambda_p_aa: $$\lambdaP{b}{t}{k_{aa}}{E}{\sigma}$$
   glossario:
+    A_f: $Af$ = Área efetiva (cm²)
     B: $B$ = Comprimento da parte reta (cm)
     b_ef: $b_{ef}$ = Largura efetiva (cm)
-    m: $m$ = Massa (kg)
-    g: $g$ = Gravidade (m/s²)
-    n_c: $n_c$ = Número de colunas (un.)
-    F: $F$ = Força (N)
     E: $E$ = Módulo de elasticidade (kN/cm²)
+    F: $F$ = Força (N)
+    F_y: $F_y$ = 
+    g: $g$ = Gravidade (m/s²)
+    k: $k$ = Índice de esbeltez
     k_al: $k_{al}$ = Coeficiente de flambagem local
+    L: $L$ = Comprimento da barra (cm)
+    m: $m$ = Massa (kg)
+    n_c: $n_c$ = Número de colunas (un.)
+    N_tr: $N_tr$ = Força axial de tração resistente de cálculo 
     t: $t$ = Espessura (cm)
     sigma: $\sigma$ = Tensão (MPA)
+    lambda: $\lambda = Índice de esbeltez$
     lambda_p: $\lambda_p$ = Esbeltez reduzida
+    gamma: $\gamma$ = Coeficiente de ponderação das ações ou das resistências, em geral
   valores:
+    A_f: 10,179
     B1_mm: 35
     B1_cm: 3,5
     b1: 3,11
@@ -79,10 +91,12 @@ extra:
     b5: 2,61
     E: 20500
     F: 1450
+    F_y: 0,33
     g: 10
     k_al: 0,43
     k_aa: 4
     m: 580
+    N_trd: 3,053
     n_c: 4
     t: 0,2
     sigma: 0,15
@@ -91,3 +105,4 @@ extra:
     lambda_p3: 0,135
     lambda_p4: 0,019
     lambda_p5: 0,057
+    gamma: 1,1
