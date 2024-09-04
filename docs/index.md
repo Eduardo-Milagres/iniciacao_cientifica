@@ -14,6 +14,6 @@ Análise estrutural de perfis metálicos formados à frio de painéis elétricos
 - Geogebra calculator
 
 ## Contribuidores
+- Douglas Andrin - Orientador
 - Eduardo Milagres Miranda - Aluno
 - Leonardo Alves da Silva - Aluno
-- Douglas Andrin - Orientador
