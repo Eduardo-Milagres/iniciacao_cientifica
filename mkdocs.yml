@@ -59,15 +59,18 @@ extra:
     b_ef: $b_{ef}$ = Largura efetiva (cm)
     E: $E$ = Módulo de elasticidade (kN/cm²)
     F: $F$ = Força (N)
-    F_y: $F_y$ = 
+    f_y: $f_y$ = Limite de escoamento do aço (kN/cm²)
     g: $g$ = Gravidade (m/s²)
     k: $k$ = Índice de esbeltez
     k_al: $k_{al}$ = Coeficiente de flambagem local
     L: $L$ = Comprimento da barra (cm)
     m: $m$ = Massa (kg)
     n_c: $n_c$ = Número de colunas (un.)
-    N_tr: $N_tr$ = Força axial de tração resistente de cálculo 
+    n_f: $n_f$ = Número de furos na seção (un.)
+    N_tr: $N_tr$ = Força axial de tração resistente de cálculo
+    N_trd: $N_{trd}$ = A força axial de tração resistente de cálculo (kN) 
     t: $t$ = Espessura (cm)
+    S: $S$ = Espaçamento dos furos
     sigma: $\sigma$ = Tensão (MPA)
     lambda: $\lambda = Índice de esbeltez$
     lambda_p: $\lambda_p$ = Esbeltez reduzida
@@ -91,13 +94,14 @@ extra:
     b5: 2,61
     E: 20500
     F: 1450
-    F_y: 0,33
+    f_y: 33
     g: 10
     k_al: 0,43
     k_aa: 4
     m: 580
-    N_trd: 3,053
+    N_trd: 305,37
     n_c: 4
+    n_f: 3
     t: 0,2
     sigma: 0,15
     lambda_p1: 0,067
